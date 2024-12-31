@@ -1,0 +1,134 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif; /* Clean and widely available font */
+  color: #333; /* Dark gray for better readability */
+  background-color: #f9f9f9; /* Subtle light gray background for contrast */
+  padding: 20px;
+  line-height: 1.6;
+}
+
+main { 
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+ 
+}
+
+main h1, main p, section, footer {
+  position: relative;
+  z-index: 2;
+}
+
+main img {
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+main h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+main h1 span {
+  display: block;
+  font-weight: normal;
+  color: #313131;
+}
+
+main p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+section {
+  margin-top: 30px;
+  width: 100%;
+}
+
+section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #555; /* Muted dark gray */
+}
+
+section p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+section ul {
+  list-style: none;
+  padding: 0;
+}
+
+section ul li {
+  margin-bottom: 10px;
+}
+
+section ul li a {
+  color: #007BFF; /* Blue color for links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section ul li a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+footer a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+  main {
+    padding: 10px;
+  }
+
+  main h1 {
+    font-size: 1.8rem;
+  }
+
+  main h1 span {
+    font-size: 1.3rem;
+  }
+
+  section h2 {
+    font-size: 1.3rem;
+  }
+}
+
+nav {
+  margin-bottom: 20px;
+}
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #007BFF;
+}
+nav a:hover {
+  text-decoration: underline;
+}
